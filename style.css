@@ -47,6 +47,43 @@ body {
     margin: auto 0;
     padding: 0.6em 0 0 0;
 }
+/*sidebar*/
+.sidenav {
+    max-width: 220px;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: -280px;
+    background: #eee;
+    border: 1px solid #064579;
+    border-radius: 8px;
+  }
+.sidenav .formulario{
+    padding: 6px 8px 6px 16px;
+}
+.botao
+{
+    width: 100%;
+}
+
+.sidebar {
+    width: 220px;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 760px;
+    background: #eee;
+    border: 1px solid #064579;
+    border-radius: 8px;
+  }
+.sidebar .formulario{
+    padding: 6px 8px 6px 16px;
+}
+.botao
+{
+    width: 100%;
+}
+
 
 .main-menu > li {
     box-sizing: border-box;
