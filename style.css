@@ -29,6 +29,8 @@ body {
     --line-offset: calc((100% - var(--container-height))/ 2 + var(--menu-item-size) + 0.6em);
 }
 
+/* Link útil sobre variável: 
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties */
 
 .container {
     width: var(--container-width);
@@ -55,7 +57,7 @@ body {
     top: 60px;
     left: -280px;
     background: #eee;
-    border: 1px solid #064579;
+    box-shadow: 0 0 1em #f13e95;
     border-radius: 8px;
   }
 .sidenav .formulario{
@@ -73,7 +75,7 @@ body {
     top: 60px;
     left: 760px;
     background: #eee;
-    border: 1px solid #064579;
+    box-shadow: 0 0 1em #f13e95;
     border-radius: 8px;
   }
 .sidebar .formulario{
@@ -142,7 +144,7 @@ body {
 
 .main-menu .active {
     color: var(--white-color);
-    background: #F5AF25;
+    background: #f13e95;
     cursor: default;
     text-shadow: 1px 1px 1px var(--dark-green-color);
     font-size: 14px;
@@ -152,7 +154,7 @@ article {
    background: var(--gray-color);
    padding: 1em;
    border-radius: 0 0 5px 5px;
-   box-shadow: 5px 5px 5px #CCC;
+   box-shadow: 0 0 1em #f13e95;
    position: relative;
    z-index: -1;
 }
@@ -184,8 +186,9 @@ a:link
  text-decoration:none; 
 } 
 .sombra {
-    border-style: outset;
+    box-shadow: 0 0 0.3em #f13e95;
 }
+
 .zoom {
     overflow: hidden;
     width: 100px;
@@ -199,7 +202,12 @@ a:link
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
-
+ /*
+    -webkit para chrome e safari
+    -moz - firefox
+    -o opera 
+    -ms internet explorer
+ */
 .zoom:hover img {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
